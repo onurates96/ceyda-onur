@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="31 Ekim 2026 nişanımıza katılımınızı bildirin.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ceyda &amp; Onur · Katılım Bildirimi">
+<meta property="og:description" content="31 Ekim 2026 nişanımıza katılımınızı bildirin.">
+<meta property="og:url" content="https://onurates96.github.io/ceyda-onur/lcv.html">
+<meta property="og:image" content="https://onurates96.github.io/ceyda-onur/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Ceyda & Onur LCV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap">
+<style>
+/* Tek sütun kart davetiye: kağıt zemin, ince çerçeve, ortalı tipografi. Bilinçli olarak tek (açık) tema. */
+:root{
+  --paper:#F3F0E8;
+  --paper-2:#E6E3D8;
+  --ink:#2F302C;
+  --ink-soft:#55594F;
+  --line:#B9C2B1;
+  --accent:#55654F;
+  --outer:#E9E6DC;
+  --display:'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --body:'Jost', 'Helvetica Neue', Helvetica, sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{background:var(--outer)}
+body{
+  margin:0; color:var(--ink); font-family:var(--body); font-weight:300;
+  padding-inline:16px; padding-block:24px;
+  display:flex; justify-content:center;
+}
+.card{
+  width:100%; max-width:540px; background:var(--paper);
+  padding:clamp(14px,4vw,28px);
+  box-shadow:0 1px 2px rgba(47,48,44,.06),0 12px 40px rgba(47,48,44,.08);
+}
+.frame{
+  border:1px solid var(--line);
+  padding:clamp(36px,8vw,56px) clamp(18px,6vw,44px) clamp(32px,7vw,44px);
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+}
+.eyebrow{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--accent); font-weight:400}
+.rings{margin-top:18px; display:block}
+.portrait{
+  margin-top:26px; width:min(300px,72vw); max-width:100%; aspect-ratio:3/4;
+  border-radius:999px 999px 0 0; overflow:hidden; border:1px solid var(--line);
+  padding:6px; background:var(--paper);
+}
+.portrait img{display:block; width:100%; height:100%; object-fit:cover; border-radius:999px 999px 0 0}
+h1{
+  margin:34px 0 0; font-family:var(--display); font-weight:400;
+  font-size:clamp(44px,13vw,64px); line-height:1; text-wrap:balance;
+}
+h1 em{color:var(--accent)}
+.lead{margin:22px 0 0; font-size:15px; line-height:1.7; max-width:36ch}
+.date{margin-top:34px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:clamp(10px,4vw,22px); width:100%}
+.date .side{font-size:12px; letter-spacing:.24em; text-transform:uppercase}
+.date .side:first-child{text-align:right}
+.date .side:last-child{text-align:left}
+.date .day{font-family:var(--display); font-size:44px; line-height:1; padding:0 clamp(14px,4vw,22px); border-inline:1px solid var(--line)}
+.time{margin-top:12px; font-size:13px; letter-spacing:.18em; color:var(--ink-soft)}
+.venue{margin-top:30px; font-family:var(--display); font-size:26px; font-style:italic}
+.place{margin-top:4px; font-size:13px; letter-spacing:.12em; color:var(--ink-soft)}
+.actions{margin-top:28px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center}
+.btn{
+  display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 18px;
+  border:1px solid var(--accent); color:var(--accent); text-decoration:none;
+  font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:400;
+  transition:background .2s,color .2s;
+}
+.btn:hover{background:var(--accent); color:var(--paper)}
+.btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+.rsvp{margin-top:22px; width:100%; display:flex; flex-direction:column; align-items:center; gap:6px}
+.rsvp h2{margin:0; font-family:var(--display); font-weight:400; font-style:italic; font-size:30px}
+.rsvp .hint{margin:0; font-size:13px; color:var(--ink-soft); line-height:1.6; max-width:34ch}
+.rsvp form{margin-top:18px; width:100%; max-width:340px; display:flex; flex-direction:column; gap:18px; text-align:left}
+.field{display:flex; flex-direction:column; gap:6px}
+.field>label,.legend{font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--ink-soft); font-weight:400}
+.input{
+  font:inherit; font-size:16px; color:var(--ink); background:var(--paper);
+  border:0; border-bottom:1px solid var(--line); padding:10px 2px; min-height:44px; border-radius:0;
+}
+.input:focus{outline:none; border-bottom-color:var(--accent)}
+textarea.input{resize:vertical; min-height:64px}
+.choice{display:grid; grid-template-columns:1fr 1fr; gap:8px; border:0; padding:0; margin:0}
+.choice legend{margin-bottom:6px; padding:0}
+.choice input{position:absolute; opacity:0; pointer-events:none}
+.choice label{
+  display:flex; align-items:center; justify-content:center; min-height:44px; padding:0 10px;
+  border:1px solid var(--line); font-size:14px; cursor:pointer; text-align:center;
+}
+.choice input:checked+label{border-color:var(--accent); background:var(--accent); color:var(--paper)}
+.choice input:focus-visible+label{outline:2px solid var(--accent); outline-offset:2px}
+.stepper{display:flex; align-items:center; gap:0; border:1px solid var(--line); width:max-content}
+.stepper button{
+  width:44px; height:44px; border:0; background:transparent; color:var(--accent);
+  font-size:20px; font-family:var(--body); cursor:pointer;
+}
+.stepper button:hover{background:var(--paper-2)}
+.stepper button:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+.stepper output{min-width:48px; text-align:center; font-family:var(--display); font-size:24px; font-variant-numeric:tabular-nums}
+.submit{
+  min-height:48px; border:0; background:var(--accent); color:var(--paper); cursor:pointer;
+  font-family:var(--body); font-size:12px; letter-spacing:.22em; text-transform:uppercase; font-weight:400;
+}
+.submit:hover{background:#3B4836}
+.submit:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+.err{margin:0; font-size:13px; color:#8A3B2F}
+.done{margin-top:18px; max-width:34ch; font-size:14px; line-height:1.6}
+.done a{color:var(--accent)}
+.count{margin-top:34px; font-size:13px; color:var(--ink-soft); letter-spacing:.06em}
+.count strong{font-family:var(--display); font-weight:500; font-size:22px; color:var(--ink); letter-spacing:0; font-variant-numeric:tabular-nums}
+.sign{margin-top:40px; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft)}
+@media (prefers-reduced-motion:no-preference){
+  .frame>*{animation:rise .8s ease both}
+  .frame>*:nth-child(n+4){animation-delay:.15s}
+  @keyframes rise{from{transform:translateY(6px)}to{transform:none}}
+}
+</style>
+</head>
+<body>
+
+<main class="card">
+  <div class="frame">
+    <div class="eyebrow">Ceyda &amp; Onur · 31 Ekim 2026</div>
+    <svg class="rings" width="120" height="22" viewBox="0 0 120 22" fill="none" stroke="#55654F" stroke-width="1" aria-hidden="true">
+      <path d="M4 11 H48"></path><path d="M72 11 H116"></path>
+      <circle cx="56" cy="11" r="6"></circle><circle cx="64" cy="11" r="6"></circle>
+    </svg>
+<section class="rsvp" id="lcv" aria-labelledby="lcv-title">
+      <h2 id="lcv-title">Katılım Bildirimi</h2>
+
+      <form id="rsvp-form" novalidate>
+        <div class="field">
+          <label for="r-name">Adınız Soyadınız</label>
+          <input class="input" id="r-name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <fieldset class="choice">
+          <legend class="legend">Katılım</legend>
+          <input type="radio" id="r-yes" name="attend" value="yes" checked>
+          <label for="r-yes">Geliyorum</label>
+          <input type="radio" id="r-no" name="attend" value="no">
+          <label for="r-no">Gelemiyorum</label>
+        </fieldset>
+
+        <div class="field" id="count-field">
+          <span class="legend" id="r-count-label">Kaç kişi katılacaksınız? (siz dahil)</span>
+          <div class="stepper" role="group" aria-labelledby="r-count-label">
+            <button type="button" id="r-minus" aria-label="Bir kişi azalt">−</button>
+            <output id="r-count" aria-live="polite">1</output>
+            <button type="button" id="r-plus" aria-label="Bir kişi artır">+</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="r-note">Notunuz (isteğe bağlı)</label>
+          <textarea class="input" id="r-note" name="note" rows="2"></textarea>
+        </div>
+
+        <p class="err" id="r-err" hidden>Lütfen adınızı yazın.</p>
+        <button class="submit" type="submit">WhatsApp ile Gönder</button>
+      </form>
+
+      <div class="done" id="r-done" hidden>
+        Mesajınız WhatsApp'ta hazır. Göndermek için WhatsApp'ta gönder tuşuna basmayı unutmayın.
+        WhatsApp açılmadıysa <a id="r-link" href="#" target="_blank" rel="noopener">buraya dokunun</a>.
+      </div>
+    </section>
+    <a class="btn" style="margin-top:34px" href="./">Davetiyeye Dön</a>
+  </div>
+</main>
+
+<script>
+(function(){
+  // Yanıtların gideceği WhatsApp numarası (ülke kodu ile, boşluksuz). Boşsa WhatsApp kişi seçtirir.
+  var PHONE = '';
+  var n = 1;
+  var out = document.getElementById('r-count');
+  var countField = document.getElementById('count-field');
+  function setN(v){ n = Math.max(1, Math.min(20, v)); out.textContent = n; }
+  document.getElementById('r-minus').addEventListener('click', function(){ setN(n - 1); });
+  document.getElementById('r-plus').addEventListener('click', function(){ setN(n + 1); });
+  document.querySelectorAll('input[name="attend"]').forEach(function(r){
+    r.addEventListener('change', function(){ countField.hidden = document.getElementById('r-no').checked; });
+  });
+
+  var form = document.getElementById('rsvp-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('r-name').value.trim();
+    var err = document.getElementById('r-err');
+    if (!name) { err.hidden = false; document.getElementById('r-name').focus(); return; }
+    err.hidden = true;
+    var coming = document.getElementById('r-yes').checked;
+    var note = document.getElementById('r-note').value.trim();
+    var msg = 'Ceyda & Onur Nişanı LCV\n' +
+      'İsim: ' + name + '\n' +
+      (coming ? 'Katılım: Geliyorum\nKişi sayısı: ' + n : 'Katılım: Gelemiyorum') +
+      (note ? '\nNot: ' + note : '');
+    var url = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(msg);
+    var link = document.getElementById('r-link');
+    link.href = url;
+    document.getElementById('r-done').hidden = false;
+    link.click();
+  });
+})();
+</script>
+
+</body>
+</html>
